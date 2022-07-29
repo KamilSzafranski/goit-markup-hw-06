@@ -432,15 +432,15 @@
                 </div>
                 <div class="footer-form-newsletter">
                     <form class="form-newsletter" name="newsletter">
-                        <labe class="label-newsletter" for="newsletter-email">
-                            <p class="form-newsletter-title">Zapisz się do newsettera</p>
+                        <label class="label-newsletter" for="newsletter-email">
+                            <span class="form-newsletter-title">Zapisz się do newsettera</span>
                             <input
                                 name="newsletter-email"
                                 id="newsletter-email"
                                 type="email"
                                 placeholder="Email"
                             />
-                        </labe>
+                        </label>
                         <button type="submit">
                             Zapisz się<svg class="icon" width="24" height="24">
                                 <use href="./images/icons.svg#send"></use>
@@ -458,12 +458,16 @@
                     </svg>
                 </button>
                 <form class="services-info">
-                    <div class="services-info-data" role="group" arial-labelby="services-info-data">
-                        <p id="service-info-data" class="services-info-title">
+                    <div
+                        class="services-info-data"
+                        role="group"
+                        aria-labelledby="services-info-data"
+                    >
+                        <p id="services-info-data" class="services-info-title">
                             Zostaw swoje dane w formularzu poniżej
                         </p>
                         <label class="services-info-name">
-                            <p>Imie</p>
+                            <span>Imie</span>
                             <svg class="icon" width="18" height="18">
                                 <use href="./images/icons.svg#form-person"></use>
                             </svg>
@@ -471,21 +475,21 @@
                         </label>
 
                         <label class="services-info-phone">
-                            <p>Telefon</p>
+                            <span>Telefon</span>
                             <svg class="icon" width="18" height="18">
                                 <use href="./images/icons.svg#form-phone"></use>
                             </svg>
-                            <input type="phone" name="services-info-phone" required />
+                            <input type="tel" name="services-info-phone" required />
                         </label>
                         <label class="services-info-email">
-                            <p>Email</p>
+                            <span>Email</span>
                             <svg class="icon" width="18" height="18">
                                 <use href="./images/icons.svg#form-email"></use>
                             </svg>
                             <input type="email" name="services-info-name" required />
                         </label>
                         <label class="services-info-comment">
-                            <p>Komentarz</p>
+                            <span>Komentarz</span>
                             <textarea
                                 class="services-info-comment"
                                 name="services-info-comment"
@@ -493,11 +497,7 @@
                             ></textarea>
                         </label>
                     </div>
-                    <div
-                        class="services-info-rules"
-                        role="group"
-                        aria-labelby="services-info-rules"
-                    >
+                    <div class="services-info-rules">
                         <label>
                             <input class="elo" type="checkbox" name="rules" value="accept" />
                             <svg class="icon icon-vector" width="16" height="15">

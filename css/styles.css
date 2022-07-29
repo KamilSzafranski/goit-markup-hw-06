@@ -374,6 +374,7 @@ body {
 }
 .form-newsletter-title {
     margin-bottom: 20px;
+    display: block;
 }
 .label-newsletter input {
     margin-right: 12px;
@@ -409,7 +410,7 @@ body {
 }
 
 .form-newsletter button:hover,
-.form-newsletter button:focs {
+.form-newsletter button:focus {
     background-color: yellowgreen;
     transform: scale(1.05);
 }
@@ -570,7 +571,8 @@ body {
     line-height: 1.16;
     color: var(--text-grey-color);
 }
-.services-info p {
+.services-info span {
+    display: inline-block;
     margin-bottom: 4px;
 }
 
