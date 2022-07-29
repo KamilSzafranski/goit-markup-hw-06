@@ -663,3 +663,16 @@ body {
     top: 4.5px;
     left: 14px;
 }
+
+.services-info-rules input {
+    appearance: none;
+}
+.icon-check {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.services-info-rules input:checked ~ .icon-check {
+    opacity: 1;
+    visibility: visible;
+}
