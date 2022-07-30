@@ -380,7 +380,7 @@ body {
     margin-right: 12px;
     display: inline-block;
     width: 358px;
-    padding: 15px 0 15px 15px;
+    padding: 14px 0 14px 16px;
     background-color: var(--footer-header-bg-color);
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
@@ -390,6 +390,9 @@ body {
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-newsletter {
+    font-size: 0;
+}
 .form-newsletter button {
     display: inline-flex;
     align-items: center;
@@ -398,7 +401,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     background-color: var(--button-bg-color);
     color: var(--text-white-color);
     border: 0;
@@ -611,7 +614,7 @@ body {
     color: var(--text--black-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.services-info label:focus-within .icon {
+.services-info-data label:focus-within .icon {
     color: var(--button-bg-color);
     opacity: 0.12;
 }
@@ -634,6 +637,7 @@ body {
 .form-backlight {
     text-decoration: underline;
     color: var(--backligh-color);
+    cursor: pointer;
 }
 
 .services-info-btn {
@@ -662,8 +666,9 @@ body {
     position: absolute;
     width: 16px;
     height: 15px;
-    top: 4.5px;
+    top: 4px;
     left: 14px;
+    cursor: pointer;
 }
 
 .services-info-rules input {
@@ -671,10 +676,15 @@ body {
 }
 .icon-check {
     visibility: hidden;
-    opacity: 0;
 }
 
 .services-info-rules input:checked ~ .icon-check {
-    opacity: 1;
+    visibility: visible;
+}
+.services-info-rules input:checked ~ .icon-vector {
+    visibility: hidden;
+}
+
+.services-info-rules input:not(:checked) ~ .icon-vector {
     visibility: visible;
 }
