@@ -391,6 +391,7 @@ body {
 .form-newsletter-title {
     margin-bottom: 20px;
     display: block;
+    font-size: 14px;
 }
 .label-newsletter input {
     margin-right: 12px;
@@ -406,7 +407,9 @@ body {
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.form-newsletter {
+    font-size: 0;
+}
 .form-newsletter button {
     display: inline-flex;
     align-items: center;
