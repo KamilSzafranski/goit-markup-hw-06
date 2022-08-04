@@ -159,7 +159,6 @@ body {
 
 .header {
     margin: 0 auto;
-    max-width: 1600px;
     padding: 200px 0;
     font-weight: 900;
     line-height: 1.36;
@@ -167,6 +166,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     background-repeat: no-repeat;
+    background-size: auto, 1600px;
+    background-position: 0%, 50% 50%;
     background-image: linear-gradient(to top, #2f303a66, #2f303a66), url(../images/header-bg.jpg);
 }
 
